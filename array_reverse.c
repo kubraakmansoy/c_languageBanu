@@ -9,12 +9,14 @@ int main()
     for(i = 0; i < number; i++) {
         scanf("%d", arrays + i);
     }
-
-
+    for (i=number-1 ; i>-1 ; i--){
+        printf("%d ", arrays + i );
+    }
+printf("\n");
     /* Write the logic to reverse the array. */
     //    burada array tersi alınacak ve yazdırılacak
 
     for(i = 0; i < number; i++)
-        printf("%d ", *(arrays + i));
+        printf(" %d ", *(arrays + i));
     return 0;
 }
